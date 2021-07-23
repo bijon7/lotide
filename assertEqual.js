@@ -3,10 +3,10 @@ const assertEqual = function(actual, expected) {
 //Prints out corresponding messages based on whether the arguments
 //are equal or not.
   if (actual=== expected) {
-    console.log ("✅✅✅Assertion Passed: " + actual + "===" + " expected")
+    console.log (`✅✅✅Assertion Passed: ${actual} === ${expected}!`)
   }
   else {
-    console.log ("❌❌❌Assertion Failed: " + actual +  "!==" + " expected")
+    console.log (`❌❌❌Assertion Failed:${actual} !== ${expected}!`)
 
 }
   }
