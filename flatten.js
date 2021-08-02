@@ -1,7 +1,8 @@
 //flatten.js takes in an array which is consisted of elements some of which 
 //happen to be arrays themselves. This program converts and merges the inner
 //"type array elements" with regular elements and prints them out in a single
-//new array.
+//new array. Assertions is made at the end of the program to check
+//accuracy.
 
 //Checks to see whether two arrays are equal objects.
 const eqArrays = function (array1, array2) {
