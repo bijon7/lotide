@@ -1,3 +1,7 @@
+//This program counts a specific set of numbers in an array and returns 
+//a new array with those numbers.
+
+
 const assertEqual = function(actual, expected) {
   //Prints out corresponding messages based on whether the arguments
   //are equal or not.
