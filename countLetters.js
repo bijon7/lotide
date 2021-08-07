@@ -1,3 +1,6 @@
+//The function takes in a sentence (as a string) and then return
+//a count of each of the letters in that sentence.
+
 const countLetters = function (word){
   const result = {};
   const letters = word.split("");
@@ -5,7 +8,7 @@ const countLetters = function (word){
     if ( el === " ") {
       continue;
     }
-    console.log ("before", el,result[el]);
+    
     if (result[el]) {
       result[el]+= 1;
     } else { 
@@ -13,7 +16,7 @@ const countLetters = function (word){
     }
     //result[el] = result[el] || 0;
     //result[el] +=1;
-    console.log ("after", el, result[el]);
+    
   }
   return result;
 }
