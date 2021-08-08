@@ -1,4 +1,6 @@
 
+//This program takes an array and a callback as arguments and performs
+//operations on every single element of the array directed by the callback.
 const map = function (array, callback) {
   const results = [];
   for (let item of array) {
