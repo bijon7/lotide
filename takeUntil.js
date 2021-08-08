@@ -1,3 +1,8 @@
+//This program takes in array and a callback as arguments and returns a
+//new array which is practically a segment of the old array which begins
+//at the first element and ends right before the element that has a
+//true return value of the callback function.
+
 const takeUntil = function (array, callback) {
   let index = 0;
 
