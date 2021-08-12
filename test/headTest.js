@@ -5,4 +5,4 @@ const headOfArray = require('../head.js');
 assertEqual(headOfArray([2, 3, 5]), 2);
 assertEqual(headOfArray(["Hello", "Lighthouse", "Labs"]), "Hello");
 assertEqual(headOfArray([2]), 2);
-assertEqual(headOfArray([]), 2);
+assertEqual(headOfArray([]), 3);
