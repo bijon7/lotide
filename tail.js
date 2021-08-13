@@ -1,16 +1,4 @@
-const assertEqual = function(actual, expected) {
-  //Prints out corresponding messages based on whether the arguments
-  //are equal or not.
-  
-    if (actual=== expected) {
-      console.log (`✅✅✅Assertion Passed: ${actual} === ${expected}!`)
-    }
-    else {
-      console.log (`❌❌❌Assertion Failed:${actual} !== ${expected}!`)
-  
-    }
-
-  }
+const assertEqual = require('./assertEqual');
   //Defines a function that creates a new array without the first element of the
   //existing array.
 
@@ -25,11 +13,12 @@ const assertEqual = function(actual, expected) {
   return newArray;
   }
 //Test case with regular array, an array with one element and an empty array.
-  console.log (tail ([1,2,3]));
-  console.log (tail ([1]));
-  console.log (tail ([]));
+  // console.log (tail ([1,2,3]));
+  // console.log (tail ([1]));
+  // console.log (tail ([]));
 
   // Test Case: Check the original array 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+// const words = ["Yo Yo", "Lighthouse", "Labs"];
+// tail(words); // no need to capture the return value since we are not checking it
+// assertEqual(words.length, 3); // original array should still have 3 elements!
+ module.exports = tail;
