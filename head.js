@@ -7,6 +7,7 @@ const headOfArray = function (array) {
 
 }
 module.exports = headOfArray;
+
  
 console.log(headOfArray([1, 3, 5, 7]));
 

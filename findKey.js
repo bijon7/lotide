@@ -22,6 +22,8 @@ testValue = findKey({
 }, x => x.stars === 2)
 console.log(testValue);
 
+module.exports = findKey;
+
 
 
 

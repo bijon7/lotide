@@ -45,4 +45,6 @@ const eqObjects = function (object1, object2) {
   const ab = { a: "1", b: "2" };
   const ba = { a: "1", b: "2" };
  console.log(eqObjects(ab, ba)); 
+
+ module.exports = eqObjects;
  

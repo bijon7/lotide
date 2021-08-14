@@ -28,3 +28,5 @@ const letterPositions = function (word) {
 
 letterPositions("lighthouse labs");
 
+module.exports = letterPositions;
+
