@@ -1,6 +1,4 @@
-//const assertEqual = require('./assertEqual');
-
-// Function returning first element of array. 
+//This program takes an array as an input and returns the first element.
 
 const headOfArray = function (array) {
 
@@ -9,28 +7,10 @@ const headOfArray = function (array) {
 
 }
 module.exports = headOfArray;
+ 
+console.log(headOfArray([1, 3, 5, 7]));
 
-// Verifies whether the first element does equal the input using numbers, strings
-//single element array as well as an empty array.
-// assertEqual(headOfArray([2,3,5]), 2);
-// assertEqual(headOfArray(["Hello", "Lighthouse", "Labs"]), "Hello");
-// assertEqual(headOfArray([2]), 2);
-// assertEqual(headOfArray([]), 2);
 
-const testOne = function (letter) {
-  return letter;
-}
 
-b = testOne ("a");
-console.log (b);
-
-const testSecond = function (letter) {
-    let s = letter;
-    console.log (s);
-}
-
-console.log(testSecond("m"));
-
-testSecond ("m");
 
 
