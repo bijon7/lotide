@@ -3,7 +3,12 @@
 const letterPositions = function (word) {
   const result = {};
 
+  //Converts the string to an array for iteration purposes.
   const letters = word.split("");
+
+  //A given letter searches for its next ocuurance (if any) by iteration through which the given letter
+  //is compared with every single letter in the array.
+  
   for (let i = 0; i < letters.length; i++) {
     if (letters[i] === " ") {
       continue;
@@ -14,19 +19,22 @@ const letterPositions = function (word) {
       if (letters[j] === letters[i]) {
 
         indexes.push(j);
-
       }
-
     }
+
+    //the indexes array is the value of key of the result object which in turn represents the number of ocuurances of
+    //each letter.
+
     result[letters[i]] = indexes;
-  }
+}
 
 
-  console.log(result);//
+  return result;
 
 }
 
-letterPositions("lighthouse labs");
+//test
+console.log(letterPositions("lighthouse labs"));
 
 module.exports = letterPositions;
 

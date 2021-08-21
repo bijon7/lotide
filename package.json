@@ -1,5 +1,5 @@
 {
-  "name": "lotide",
+  "name": "@bijon7/lotide",
   "version": "1.0.0",
   "description": "The project creates several library functions.",
   "main": "assertArraysEqual.js",
@@ -8,7 +8,6 @@
   },
   "scripts": {
     "test": "mocha"
-    
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,8 @@
   "homepage": "https://github.com/bijon7/lotide#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.0.1",
+    "my-package": "^0.0.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
