@@ -45,15 +45,20 @@ const without = function (source, itemsToRemove) {
 
   for (let i = 0; i < source.length; i++) {
 
+    let matchFound = false;
+
     for (let j = 0; j < itemsToRemove.length; j++) {
 
-      if (source[i] !== itemsToRemove[j]) {
-        removedItemsArray.push(source[i]);
-
+      if (source[i] === itemsToRemove[j]) {
+        matchFound = true;
       }
+    }
 
+    if (!matchFound) {
+      removedItemsArray.push(source[i]);
     }
   }
+
   return removedItemsArray;
 }
 
@@ -62,7 +67,8 @@ const words = ["hello", "world", "lighthouse"];
 console.log(without([1, 2, 3], [3]));
 console.log(without(words, ["lighthouse"]));
 console.log(without([1, 2, 3], [1]));
-
+console.log(without(["1", "1", "1", "2", "3", "1", "1"], ["1", 2, "3"]));
+console.log(without(["1", "2", "3"], [1, 2, "3"]));
 //test to see whether the original array is unchanged.
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
 
